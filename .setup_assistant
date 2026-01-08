@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: cobot_description
+    relative_path: urdf/cobot_camera.urdf.xacro
+  srdf:
+    relative_path: config/cobot.srdf
+  package_settings:
+    author_name: Florian Tretter
+    author_email: florian.tretter13@gmail.com
+    generated_timestamp: 1767893031
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
